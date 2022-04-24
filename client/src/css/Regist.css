@@ -1,0 +1,137 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.regist-container{
+    background-color: white;
+    width: 1200px;
+    height:800px;
+    display: flex;
+    box-shadow: 0 6px 20px rgba(0,0,0, 0.5);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+section .regist-container .img-box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .regist-container .img-box img{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.regist-container .content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.regist-container .form-box{
+    width: 50%;
+}
+
+ section .regist-container .form-box h2 {
+    color:#2f3640;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid rgb(222, 184, 135);
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.regist-container .input-box{
+    margin-bottom: 20px;
+}
+
+.regist-container .input-box label{
+    font-size:18px;
+    margin-bottom: 5px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color:#607d8b;
+}
+
+section .regist-container input{
+    width: 100%;
+    padding:10px 20px;
+    outline: none;
+    border:1px solid #2f3640;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color:#2f3640;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.regist-container .regist-btn{
+    color:#fff;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    outline: none;
+    width: 100%;
+    padding:10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color:rgb(222, 184, 135);
+}
+
+.regist-container .regist-btn:hover{   
+    background-color:rgb(222, 184, 135,0.9);
+}
+
+section .regist-container .input-box p{
+    color:#2f3640;
+}
+
+section .regist-container .input-box p a{
+    color:rgb(222, 184, 135);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1700px){
+    section .regist-container{
+        height: 90%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    section .img-box{
+        display: none;
+    }
+    section .regist-container{
+        width: 90%;
+        height: 90%;
+        margin-top: 20px;
+    }
+
+    section .regist-container .content-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    section .content-box .form-box{
+        width: 100%;
+        padding: 40px;
+        background: rgba(255,255, 255, 0.9);
+    }
+}

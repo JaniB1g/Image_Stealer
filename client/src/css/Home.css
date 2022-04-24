@@ -1,0 +1,127 @@
+.post{
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 6px 20px rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+.post .username-box{
+    font-family:cursive;
+    text-align: center;
+    padding:5px;
+}
+
+.post .username-box a{
+    text-decoration:none;
+    color: rgb(0,0,0);
+}
+
+.post .description-box{
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+}
+.post .image-box { 
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.post .image-box .image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+
+.post .image-box .image:hover{
+    transform: scale(1.1);
+}
+
+.post .likes{
+    height: 50px;
+    padding:5px;
+    display: flex;
+}
+
+.post .like-box { 
+   width: 50%;
+   text-align: center;
+   margin: 0;
+}
+
+.post .like-box .like{
+   font-size: 24px; 
+   color:#3CB371;
+   width:240px;
+   height: 40px;
+   margin: 0;
+   background: none;
+   border: 3px solid #3CB371;
+   max-width: 100%;
+   cursor: pointer;
+   background-color: transparent;
+   transition: 0.3s ease-in-out;
+}
+
+.post .like-box .like:hover{
+    box-shadow: 0 6px 20px  #439e6c;
+}
+
+.post .dislike-box { 
+    width: 50%;
+    text-align: center;
+    margin: 0;
+}
+
+.post .dislike-box .dislike{
+   font-size: 24px; 
+   color:#CD5C5C;
+   width:240px;
+   height: 40px;
+   margin: 0;
+   background: none;
+   border: 3px solid #CD5C5C;
+   max-width: 100%;
+   cursor: pointer;
+   background-color: transparent;
+   transition: 0.3s ease-in-out;
+}
+
+.post .dislike-box .dislike:hover{
+    box-shadow: 0 6px 20px 0 #ac5a5a;
+}
+
+
+@media (max-width :550px) {
+    .post{
+        width: 90%;
+    }
+
+    .post .dislike-box .dislike{
+        border: none;
+    }
+
+    .post .like-box .like{
+        border: none;   
+    }
+}
+
+@media (max-width :500px) {
+    .post .likes{
+        height: 40px;
+    }
+
+    .post .dislike-box .dislike{
+        font-size: 20px;
+        height: 10px;
+    }
+
+    .post .like-box .like{
+        font-size: 20px;
+       height: 10px;
+    }
+}

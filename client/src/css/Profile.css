@@ -1,0 +1,94 @@
+.profile-container{
+    width: 1200px;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+.profile-container h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.5);
+    border: 3px dashed #3CB371;
+    border-radius: 10px;
+    color: rgba(46, 139, 87);
+}
+
+.profile-container .changesPassword-btn{
+    margin:10px;
+    padding: 10px;
+    border-radius:10px;
+    color: #3CB371;
+    background-color: #fff;
+    border: 3px solid #3CB371;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-container .changesPassword-btn:hover{
+    background-color: #3CB371;
+    color: #fff;
+}
+
+.profile-container .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+    max-width: 100%;
+}
+
+
+.profile-container .posts{
+    width:380px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.profile-container .description-box{
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+.profile-container .image-box{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    cursor: pointer;
+}
+.profile-container .image-box .image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+    height: 500px;
+}
+
+.profile-container .image-box .image:hover{
+    transform: scale(1.1);
+}
+
+.profile-container .likes{
+    display: flex;
+    padding: 5px;
+}
+
+.profile-container .likes .like-count{
+    color:#3CB371;
+    margin-right: 10px;
+}
+
+.profile-container .likes .dislike-count{
+    color:#CD5C5C;
+}
+

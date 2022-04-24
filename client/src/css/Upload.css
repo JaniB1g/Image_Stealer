@@ -1,0 +1,101 @@
+section{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-container{
+    width: 1000px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-container > .upload_content-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+section .upload-container .upload_form-box  > h1{
+    color:#298854;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 32px;
+    display: inline-block;
+    font-size: 1.8rem;
+    text-shadow: 0 5px 5px rgba(0,0,0, 0.5);
+}
+
+.upload-container .input-box{
+    margin-bottom: 20px;
+}
+
+section .upload-container .input-box input{
+    width: 100%;
+    padding:10px 20px;
+    border:none;
+    border-radius: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color:#2f3640;
+    background: transparent;
+}
+
+.upload-container .upload-btn{
+    background:#fff;
+    letter-spacing: 1px;
+    outline: none;
+    width: 100%;
+    padding:10px 20px;
+    cursor: pointer;
+    color:#298854;
+    border:1px solid #298854 ;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.upload-container .upload-btn:hover{
+    background:#298854;
+    color:#fff;
+}
+
+@media screen and (max-width: 1500px){
+
+    section .upload-container{
+        width: 90%;
+    }
+
+    section .upload_content-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    section .upload-container .upload_form-box > h1{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    section .upload-container .upload_form-box > h1{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    section .upload-container .upload_form-box > h1{
+        font-size: 1rem;
+    }
+}
