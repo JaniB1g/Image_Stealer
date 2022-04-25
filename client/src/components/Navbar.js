@@ -31,7 +31,7 @@ function Navbar({click}) {
                       </>
                       ) : (
                         <>
-                        <li><Link className='nav-item nav-line-hover' to="/">{authState.username}</Link></li>
+                        <li><Link className='nav-item nav-line-hover' to={`/profile/${authState.id}`}>{authState.username}</Link></li>
                         <li><Link className='nav-item nav-line-hover' to="/">Főoldal</Link></li>
                         <li><Link className='nav-item nav-line-hover' to="/upload">Feltöltés</Link></li>
                         <button className='nav-btn' onClick={Logout}>Kijelentkezés</button>

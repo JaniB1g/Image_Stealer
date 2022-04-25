@@ -4,6 +4,10 @@
     max-width: 100%;
 }
 
+img{
+    max-width: 100%;
+}
+
 .profile-container h1{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -51,6 +55,8 @@
     box-shadow: 0 6px 20px rgba(0,0,0, 0.5);
     border-radius: 5px;
     max-width: 100%;
+    flex:1;
+    min-width: 380px;
 }
 
 .profile-container .description-box{
@@ -92,3 +98,14 @@
     color:#CD5C5C;
 }
 
+@media (max-width:1200px) {
+    .profile-container{
+        width:90%;
+    }
+}
+
+@media (max-width:500px) {
+    .profile-container h1{
+        font-size:1.5rem;
+    }
+}
